@@ -18,7 +18,7 @@ public:
         //our currentMin will be either p1 or p2 or nums[i] whichever is smaller
         currentMin = min(nums[i], min(p1, p2));
         //our maxProduct will be our currentMax or our maxProduct, whichever is bigger.
-        maxProduct = currentMax > maxProduct ? currentMax : maxProduct;
+        maxProduct = max(maxProduct, currentMax);
     }
     return maxProduct;
     }

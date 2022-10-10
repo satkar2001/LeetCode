@@ -2,9 +2,9 @@ class Solution {
 public:
     int maxProduct(vector<int>& nums) {
         
-        if(nums.empty()) {
-        return 0;
-    }
+    //     if(nums.empty()) {
+    //     return 0;
+    // }
     int currentMax = nums[0];
     int currentMin = nums[0];
     int maxProduct = nums[0];
